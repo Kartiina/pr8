@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pr_8.Edit">
+   <children>
+      <GridPane layoutX="99.0" layoutY="88.0" prefHeight="171.0" prefWidth="403.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="286.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="0.0" prefWidth="117.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="78.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="Name" text="Имя" />
+            <Label  fx:id="Age" text="Возраст" GridPane.rowIndex="1" />
+            <Label fx:id="BDay" text="Год рождения" GridPane.rowIndex="2" />
+            <Label fx:id="Vaccine" prefHeight="32.0" prefWidth="304.0" text="Прививка, сделанная не более 3х месяцев назад" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="475.0" layoutY="314.0" mnemonicParsing="false" text="Cancel" />
+      <Button layoutX="411.0" layoutY="315.0" mnemonicParsing="false" text="OK:)" />
+   </children>
+</AnchorPane>
